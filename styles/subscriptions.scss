@@ -1,8 +1,6 @@
-$row-header-width: 340px;
 $subscription-page-min-width: 960px;
 
 .package-types-tabs {
-  padding-left: $row-header-width;
   text-align: center;
   margin: 40px 0;
   box-sizing: border-box;
@@ -23,10 +21,9 @@ $subscription-page-min-width: 960px;
       text-align: center;
       margin: 0 10px;
       box-shadow: rgba(222, 231, 239, 0.3) 0px 2px 8px 4px;
-      width: 200px;
+      width: 240px;
 
       &.most-popular {
-        width: 240px;
         margin-top: -20px;
         margin-bottom: -20px;
 
@@ -41,7 +38,6 @@ $subscription-page-min-width: 960px;
     }
 
     .column-header {
-      height: 160px;
       padding: 20px;
       box-sizing: content-box;
 
@@ -61,13 +57,13 @@ $subscription-page-min-width: 960px;
       }
 
       > .description {
-        line-height: 20px;
-        font-size: 12px;
+        font-size: 16px;
       }
     }
 
     .column-footer {
-      padding: 40px 0;
+      padding-top: 20px;
+      padding-bottom: 30px;
 
       > div.selected {
         line-height: 40px;
@@ -87,29 +83,11 @@ $subscription-page-min-width: 960px;
       }
     }
 
-    &.row-header {
-      font-size: 12px;
-      min-width: $row-header-width;
-      text-align: right;
-
-      > div.row {
-        padding-right: 20px;
-      }
-    }
-
     .buttonish {
       padding-left: 20px;
       padding-right: 20px;
     }
   }
-}
-
-.pricing-footer {
-  margin-left: 300px;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  text-align: center;
-  line-height: 1.5;
 }
 
 @media only screen and (max-width: 544px) {

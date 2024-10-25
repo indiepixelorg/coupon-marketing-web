@@ -129,6 +129,10 @@ header > ul > li > a {
   flex-direction: column;
 }
 
+.center {
+  text-align: center;
+}
+
 section {
   padding: 80px 0;
   text-align: center;
@@ -373,7 +377,6 @@ footer a {
 }
 
 .package-types-tabs {
-  padding-left: 340px;
   text-align: center;
   margin: 40px 0;
   box-sizing: border-box;
@@ -392,10 +395,9 @@ footer a {
   text-align: center;
   margin: 0 10px;
   box-shadow: rgba(222, 231, 239, 0.3) 0px 2px 8px 4px;
-  width: 200px;
+  width: 240px;
 }
 .pricing-flex > .column > .box.most-popular, .pricing-flex > .boxes.column > li.most-popular {
-  width: 240px;
   margin-top: -20px;
   margin-bottom: -20px;
 }
@@ -406,7 +408,6 @@ footer a {
   background: #f9f9fb;
 }
 .pricing-flex > .column .column-header {
-  height: 160px;
   padding: 20px;
   box-sizing: content-box;
 }
@@ -424,11 +425,11 @@ footer a {
   margin: 24px 0;
 }
 .pricing-flex > .column .column-header > .description {
-  line-height: 20px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .pricing-flex > .column .column-footer {
-  padding: 40px 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 .pricing-flex > .column .column-footer > div.selected {
   line-height: 40px;
@@ -443,25 +444,9 @@ footer a {
 .pricing-flex > .column .row > .emoji {
   width: 20px;
 }
-.pricing-flex > .column.row-header {
-  font-size: 12px;
-  min-width: 340px;
-  text-align: right;
-}
-.pricing-flex > .column.row-header > div.row {
-  padding-right: 20px;
-}
 .pricing-flex > .column .buttonish {
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.pricing-footer {
-  margin-left: 300px;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  text-align: center;
-  line-height: 1.5;
 }
 
 @media only screen and (max-width: 544px) {

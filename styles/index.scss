@@ -148,6 +148,10 @@ header {
   flex-direction: column;
 }
 
+.center {
+  text-align: center;
+}
+
 section {
   @extend .full-width;
   padding: 80px 0;
