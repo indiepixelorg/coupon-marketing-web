@@ -228,14 +228,11 @@ div.main-text {
 ul.vertical-points {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 60px;
 
   > li {
-    height: 60px;
     border-bottom: 1px solid #eee;
-    margin-bottom: 40px;
-    padding: 0 20px;
-    padding-bottom: 40px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -406,7 +403,7 @@ footer {
     align-items: center;
     
     .button-like {
-      margin-top: 20px;
+      margin-top: 40px;
     }
   }
 }
@@ -654,7 +651,6 @@ footer {
     }
 
     ul.vertical-points {
-      margin-top: 60px;
       text-align: left;
     }
 

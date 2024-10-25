@@ -198,14 +198,11 @@ div.main-text {
 ul.vertical-points {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 ul.vertical-points > li {
-  height: 60px;
   border-bottom: 1px solid #eee;
-  margin-bottom: 40px;
-  padding: 0 20px;
-  padding-bottom: 40px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -337,7 +334,7 @@ footer a {
   align-items: center;
 }
 .text-by-image > div.text .button-like {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .show-only-on-mobile {
@@ -754,7 +751,6 @@ ol.tab-control > li.selected {
     margin-top: 2px;
   }
   body:not(.force-desktop) ul.vertical-points {
-    margin-top: 60px;
     text-align: left;
   }
   body:not(.force-desktop) footer {
