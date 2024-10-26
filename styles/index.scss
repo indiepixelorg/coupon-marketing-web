@@ -537,6 +537,12 @@ footer {
     header {
       padding-left: 20px;
       padding-right: 20px;
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #f7fbfe;
+      z-index: 1;
     }
     
     #hamburger-menu {
@@ -545,6 +551,11 @@ footer {
       background: #102830;
       text-align: center;
       padding: 20px 0;
+      position: sticky;
+      top: 120px;
+      left: 0;
+      right: 0;
+      z-index: 1;
 
       > li {
         > a {
