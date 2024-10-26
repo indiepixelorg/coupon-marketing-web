@@ -597,13 +597,16 @@ ol.tab-control > li.selected {
   transform: rotate(45deg);
 }
 
-#pricing .yearly-price {
+#pricing .yearly {
   display: none;
 }
-#pricing.yearly .yearly-price {
+#pricing.yearly a.yearly {
+  display: inline-block;
+}
+#pricing.yearly div.yearly {
   display: block;
 }
-#pricing.yearly .monthly-price {
+#pricing.yearly .monthly {
   display: none;
 }
 

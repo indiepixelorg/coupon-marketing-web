@@ -458,15 +458,21 @@ footer {
 @import "ribbon.scss";
 
 #pricing {
-  .yearly-price {
+  .yearly {
     display: none;
   }
   
-  &.yearly .yearly-price {
-    display: block;
+  &.yearly {
+    a.yearly {
+      display: inline-block;
+    }
+
+    div.yearly {
+      display: block;
+    }
   }
   
-  &.yearly .monthly-price {
+  &.yearly .monthly {
     display: none;
   }
 }
