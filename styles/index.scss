@@ -160,8 +160,16 @@ section {
   padding: 80px 0;
   text-align: center;
 
-  &:not(.cta-only) > .cta {
+  > .cta {
     margin-top: 40px;
+  }
+
+  &.cta-only {
+    padding: 0;
+
+    > .cta {
+      margin-top: 0;
+    }
   }
 }
 
