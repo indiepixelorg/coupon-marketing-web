@@ -34,7 +34,11 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-Z9EEK3YJFX');
+    gtag('config', 'G-Z9EEK3YJFX', {
+      'anonymize_ip': true, // Anonymize IP address (we don't want to show cookie banner)
+      'allow_ad_personalization_signals': false, // Disables ad personalization signals (we don't want to show cookie banner)
+      'storage': 'none' // Prevents the storage of cookies (we don't want to show cookie banner)
+    });
   </script>>
   
   <body>
