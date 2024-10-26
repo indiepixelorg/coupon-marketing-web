@@ -160,7 +160,7 @@ section {
   padding: 80px 0;
   text-align: center;
 
-  > .cta {
+  &:not(.cta-only) > .cta {
     margin-top: 40px;
   }
 }
@@ -669,6 +669,7 @@ footer {
       &.wide {
         margin-left: 0;
         margin-right: 0;
+        margin-top: 40px;
       }
     }
     
@@ -694,6 +695,7 @@ footer {
 
     ul.vertical-points {
       text-align: left;
+      margin-top: 40px;
     }
 
     footer {
