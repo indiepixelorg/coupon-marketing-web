@@ -1,3 +1,6 @@
+$header-height: 120px;
+$header-box-shadow-height: 16px;
+
 /* Resetting default margin and padding */
 * {
   margin: 0;
@@ -103,7 +106,7 @@ a.logo {
 
 header {
   @extend .full-width;
-  height: 120px;
+  height: $header-height;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -534,15 +537,42 @@ footer {
       }
     }
 
+    .sticky-header {      
+      position: sticky;
+      height: $header-height + $header-box-shadow-height;
+      top: -$header-box-shadow-height;
+      z-index: 1;
+
+      // Shadow
+      &::before {
+        content: '';
+        display: block;
+        height: $header-box-shadow-height;
+        position: sticky;
+        top: $header-height - $header-box-shadow-height;
+        box-shadow: rgba(33, 35, 38, 0.15) 0px 0px $header-box-shadow-height 0px;
+      }
+
+      // Cover (we want shadow hidden when user scrolled all the way to the top of the page)
+      &::after {
+        content: '';
+        display: block;
+        height: $header-box-shadow-height;
+        position: sticky;
+        background: #f7fbfe;
+        top: 0;
+        z-index: 2;
+      }
+    }
+
     header {
       padding-left: 20px;
       padding-right: 20px;
       position: sticky;
-      top: 0;
-      left: 0;
-      right: 0;
+      top: 0px;
+      margin-top: -$header-box-shadow-height;
+      z-index: 3;
       background: #f7fbfe;
-      z-index: 1;
     }
     
     #hamburger-menu {
@@ -552,7 +582,8 @@ footer {
       text-align: center;
       padding: 20px 0;
       position: sticky;
-      top: 120px;
+      top: $header-height;
+      margin-top: -$header-box-shadow-height;
       left: 0;
       right: 0;
       z-index: 1;

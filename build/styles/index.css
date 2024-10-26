@@ -661,15 +661,37 @@ ol.tab-control > li.selected {
   body:not(.force-desktop) .show-only-on-mobile.inline {
     display: inline;
   }
+  body:not(.force-desktop) .sticky-header {
+    position: sticky;
+    height: 136px;
+    top: -16px;
+    z-index: 1;
+  }
+  body:not(.force-desktop) .sticky-header::before {
+    content: "";
+    display: block;
+    height: 16px;
+    position: sticky;
+    top: 104px;
+    box-shadow: rgba(33, 35, 38, 0.15) 0px 0px 16px 0px;
+  }
+  body:not(.force-desktop) .sticky-header::after {
+    content: "";
+    display: block;
+    height: 16px;
+    position: sticky;
+    background: #f7fbfe;
+    top: 0;
+    z-index: 2;
+  }
   body:not(.force-desktop) header {
     padding-left: 20px;
     padding-right: 20px;
     position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0px;
+    margin-top: -16px;
+    z-index: 3;
     background: #f7fbfe;
-    z-index: 1;
   }
   body:not(.force-desktop) #hamburger-menu {
     display: none;
@@ -679,6 +701,7 @@ ol.tab-control > li.selected {
     padding: 20px 0;
     position: sticky;
     top: 120px;
+    margin-top: -16px;
     left: 0;
     right: 0;
     z-index: 1;

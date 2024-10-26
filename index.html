@@ -42,33 +42,35 @@
   </script>
   
   <body>
-    
-    <header>
-      <a class="logo">
-        <img decoding="async" src="./images/192icon.png" alt="logo" />
-        <span class="logo-text">Gift Coupon Maker</span>
-      </a>
-      <ul class="horizontal hide-on-mobile">
-        <li>
-          <a href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="./index.html#features">Features</a>
-        </li>
-        <li>
-          <a href="./index.html#pricing">Pricing</a>
-        </li>
-        <li>
-          <a href="./index.html#contact">Contact</a>
-        </li>
-        <li>
-          <a class="button-like" href="./redirect.html?s=header">Login</a>
-        </li>
-      </ul>
-      <button class="hamburger show-only-on-mobile" onClick="document.getElementById('hamburger-menu').classList.toggle('expanded');">
-        <span class="material-symbols-outlined">menu</span>
-      </button>
-    </header>
+
+    <div class="sticky-header">
+      <header>
+        <a class="logo">
+          <img decoding="async" src="./images/192icon.png" alt="logo" />
+          <span class="logo-text">Gift Coupon Maker</span>
+        </a>
+        <ul class="horizontal hide-on-mobile">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./index.html#features">Features</a>
+          </li>
+          <li>
+            <a href="./index.html#pricing">Pricing</a>
+          </li>
+          <li>
+            <a href="./index.html#contact">Contact</a>
+          </li>
+          <li>
+            <a class="button-like" href="./redirect.html?s=header">Login</a>
+          </li>
+        </ul>
+        <button class="hamburger show-only-on-mobile" onClick="document.getElementById('hamburger-menu').classList.toggle('expanded');">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </header>
+    </div>
 
     <ul id="hamburger-menu" class="show-only-on-mobile">
       <li>
