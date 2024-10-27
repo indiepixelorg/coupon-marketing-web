@@ -6,139 +6,142 @@
 }
 
 .pricing-flex {
-  justify-content: center;
   font-size: 14px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 
-  > .column {
+  > .box {
+    background: white;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: rgba(222, 231, 239, 0.3) 0px 2px 8px 4px;
+    width: 240px;
+
+    &.most-popular {
+      margin-top: -20px;
+      margin-bottom: -20px;
+
+      > .column-header {
+        padding-top: 40px;
+      }
+    }
+
+    > .row:nth-child(even) {
+      background: $ulverbite-white;
+    }
+  }
+
+  .column-header {
+    padding: 20px;
+    box-sizing: content-box;
+
+    > .title {
+      font-weight: 600;
+      font-size: 16px;
+      color: #242526;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    > .price {
+      font-weight: 300;
+      font-size: 24px;
+      color: #242526;
+      margin: 24px 0;
+    }
+
+    > .description {
+      font-size: 16px;
+    }
+  }
+
+  .column-footer {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    > div.selected {
+      line-height: 40px;
+
+      > button {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .row {
+    height: 30px;
+    line-height: 30px;
+
+    > .emoji {
+      width: 20px;
+    }
+  }
+
+  .buttonish {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+// Tablet & mobile
+@media only screen and (max-width: 780px) {
+  .package-types-tabs {
+    min-width: 0;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-flex {
+    flex-direction: column;
     
-    > .box {
-      background: white;
-      border-radius: 40px;
-      text-align: center;
-      margin: 0 10px;
-      box-shadow: rgba(222, 231, 239, 0.3) 0px 2px 8px 4px;
-      width: 240px;
-
+    > .box {      
       &.most-popular {
-        margin-top: -20px;
-        margin-bottom: -20px;
-
-        > .column-header {
-          padding-top: 40px;
-        }
+        margin-top: 0;
+        margin-bottom: 0;
       }
-
-      > .row:nth-child(even) {
-        background: $ulverbite-white;
-      }
-    }
-
-    .column-header {
-      padding: 20px;
-      box-sizing: content-box;
-
-      > .title {
-        font-weight: 600;
-        font-size: 16px;
-        color: #242526;
-        text-transform: uppercase;
-        margin: 10px 0;
-      }
-
-      > .price {
-        font-weight: 300;
-        font-size: 24px;
-        color: #242526;
-        margin: 24px 0;
-      }
-
-      > .description {
-        font-size: 16px;
-      }
-    }
-
-    .column-footer {
-      padding-top: 20px;
-      padding-bottom: 30px;
-
-      > div.selected {
-        line-height: 40px;
-
-        > button {
-          margin-top: 10px;
-        }
-      }
-    }
-
-    .row {
-      height: 30px;
-      line-height: 30px;
-
-      > .emoji {
-        width: 20px;
-      }
-    }
-
-    .buttonish {
-      padding-left: 20px;
-      padding-right: 20px;
     }
   }
 }
 
+// Mobile
 @media only screen and (max-width: 544px) {
   body:not(.force-desktop) {
-    .package-types-tabs {
-      min-width: 0;
-      padding-left: 0;
-      margin-top: 20px;
-      margin-bottom: 0;
-    }
-
     .pricing-flex {
-      display: block;
-      min-width: 0;
+      > .box {
+        border-radius: 20px;
+      }
 
-      > .column.inline-flex {
-        display: block;
+      .row {
+        display: none;
+      }
 
-        > .box {
-          border-radius: 20px;
-          width: auto;
+      .buttonish {
+        width: auto;
+      }
+
+      .column-header {
+        padding: 20px 0;
+        height: auto;
+
+        > .title {
           margin: 0;
-          margin-bottom: 20px;
         }
 
-        .row {
-          display: none;
+        > .price {
+          font-size: 28px;
+          margin: 10px 0;
         }
 
-        .buttonish {
-          width: auto;
+        > .description {
+          font-size: 16px;
         }
+      }
 
-        .column-header {
-          padding: 20px 0;
-          height: auto;
-
-          > .title {
-            margin: 0;
-          }
-
-          > .price {
-            font-size: 28px;
-            margin: 10px 0;
-          }
-
-          > .description {
-            font-size: 16px;
-          }
-        }
-
-        .column-footer {
-          padding: 0;
-          padding-bottom: 20px;
-        }
+      .column-footer {
+        padding: 0;
+        padding-bottom: 20px;
       }
     }
     

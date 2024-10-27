@@ -43,11 +43,3 @@ ol.tab-control {
 .tab-center {
   text-align: center;
 }
-
-@media only screen and (max-width: 544px) {
-  body:not(.force-desktop) {
-    ol.tab-control {
-      margin-bottom: 20px;
-    }    
-  }
-}
