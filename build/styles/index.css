@@ -405,8 +405,7 @@ footer a {
   width: 240px;
 }
 .pricing-flex > .box.most-popular, .boxes.pricing-flex > li.most-popular {
-  margin-top: -20px;
-  margin-bottom: -20px;
+  padding-bottom: 20px;
 }
 .pricing-flex > .box.most-popular > .column-header, .boxes.pricing-flex > li.most-popular > .column-header {
   padding-top: 40px;
@@ -460,11 +459,6 @@ footer a {
   padding-right: 20px;
 }
 
-.pricing-footer {
-  margin-top: 60px;
-  text-align: center;
-}
-
 @media only screen and (max-width: 780px) {
   .package-types-tabs {
     min-width: 0;
@@ -476,8 +470,7 @@ footer a {
     flex-direction: column;
   }
   .pricing-flex > .box.most-popular, .boxes.pricing-flex > li.most-popular {
-    margin-top: 0;
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 @media only screen and (max-width: 544px) {

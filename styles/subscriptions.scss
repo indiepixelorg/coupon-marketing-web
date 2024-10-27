@@ -19,8 +19,7 @@
     width: 240px;
 
     &.most-popular {
-      margin-top: -20px;
-      margin-bottom: -20px;
+      padding-bottom: 20px;
 
       > .column-header {
         padding-top: 40px;
@@ -89,11 +88,6 @@
   }
 }
 
-.pricing-footer {
-  margin-top: 60px;
-  text-align: center;
-}
-
 // Tablet & mobile
 @media only screen and (max-width: 780px) {
   .package-types-tabs {
@@ -105,11 +99,10 @@
 
   .pricing-flex {
     flex-direction: column;
-    
+        
     > .box {      
       &.most-popular {
-        margin-top: 0;
-        margin-bottom: 0;
+        padding-bottom: 0;
       }
     }
   }
