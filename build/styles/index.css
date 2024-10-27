@@ -461,6 +461,11 @@ footer a {
   padding-right: 20px;
 }
 
+.pricing-footer {
+  margin-top: 60px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 780px) {
   .package-types-tabs {
     min-width: 0;
@@ -504,13 +509,6 @@ footer a {
   body:not(.force-desktop) .pricing-flex .column-footer {
     padding: 0;
     padding-bottom: 20px;
-  }
-  body:not(.force-desktop) .pricing-footer {
-    margin: 40px 0;
-    margin-bottom: 0;
-  }
-  body:not(.force-desktop) .pricing-footer > div {
-    margin-top: 10px;
   }
 }
 ol.tab-control {

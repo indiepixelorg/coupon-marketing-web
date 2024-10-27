@@ -89,6 +89,11 @@
   }
 }
 
+.pricing-footer {
+  margin-top: 60px;
+  text-align: center;
+}
+
 // Tablet & mobile
 @media only screen and (max-width: 780px) {
   .package-types-tabs {
@@ -148,15 +153,6 @@
       .column-footer {
         padding: 0;
         padding-bottom: 20px;
-      }
-    }
-    
-    .pricing-footer {
-      margin: 40px 0;
-      margin-bottom: 0;
-
-      > div {
-        margin-top: 10px;
       }
     }
   }
