@@ -92,7 +92,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  
+
   .pricing-flex {
     flex-direction: column;
     
@@ -111,6 +111,7 @@
     .pricing-flex {
       > .box {
         border-radius: 20px;
+        width: 100%;
       }
 
       .row {
