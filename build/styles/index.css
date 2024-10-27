@@ -420,17 +420,21 @@ footer a {
   box-sizing: content-box;
 }
 .pricing-flex .column-header > .title {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
-  color: #242526;
   text-transform: uppercase;
   margin: 10px 0;
 }
 .pricing-flex .column-header > .price {
-  font-weight: 300;
+  font-weight: 900;
   font-size: 24px;
-  color: #242526;
   margin: 24px 0;
+  color: #102830;
+}
+.pricing-flex .column-header > .price > span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #024751;
 }
 .pricing-flex .column-header > .description {
   font-size: 16px;

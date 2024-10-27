@@ -37,18 +37,23 @@
     box-sizing: content-box;
 
     > .title {
-      font-weight: 600;
+      font-weight: 400;
       font-size: 16px;
-      color: #242526;
       text-transform: uppercase;
       margin: 10px 0;
     }
 
     > .price {
-      font-weight: 300;
+      font-weight: 900;
       font-size: 24px;
-      color: #242526;
       margin: 24px 0;
+      color: #102830;
+
+      > span {
+        font-weight: 400;
+        font-size: 16px;
+        color: #024751;
+      }
     }
 
     > .description {
