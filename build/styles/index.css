@@ -95,6 +95,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 header > a.logo {
   color: #102830;
@@ -112,7 +114,7 @@ header > button.hamburger {
 header > ul {
   height: 50px;
 }
-header > ul > li {
+header > ul > li:not(:first-child) {
   padding-left: 40px;
 }
 header > ul > li > a {
@@ -134,7 +136,7 @@ header > ul > li > a {
 }
 
 section {
-  padding: 80px 0;
+  padding: 80px 20px;
   text-align: center;
 }
 section > .cta {
@@ -160,8 +162,6 @@ section.cta-only > .cta {
   row-gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
-}
-.boxes.wide {
   margin-left: -100px;
   margin-right: -100px;
 }
@@ -171,7 +171,7 @@ section.cta-only > .cta {
   padding: 30px;
   text-align: left;
   box-sizing: border-box;
-  flex: 0 0 calc(33% - 15px);
+  flex: 0 0 calc(33% - 12px);
   gap: 15px;
 }
 .boxes > li div.number {
@@ -273,6 +273,8 @@ footer {
   padding-bottom: 120px;
   background: #102830;
   color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 footer > .horizontal, footer > .text-by-image {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -319,6 +321,7 @@ footer a {
 .text-by-image > div.image {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .text-by-image > div.image > div.outline {
   background: white;
@@ -329,15 +332,18 @@ footer a {
 }
 .text-by-image > div.image > div.outline > img {
   width: 260px;
+  max-width: 260px;
   height: auto;
   display: block;
 }
 .text-by-image > div.image > div.outline > img.big {
   width: 400px;
+  max-width: 400px;
 }
 .text-by-image > div.text {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .text-by-image > div.text .button-like {
   margin-top: 40px;
@@ -660,6 +666,32 @@ ol.tab-control > li.selected {
   margin-top: 5px;
 }
 
+@media only screen and (max-width: 1280px) {
+  .boxes {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .hide-on-tablet {
+    display: none;
+  }
+  header > ul > li:not(:first-child) {
+    padding-left: 20px;
+  }
+  ul.vertical-points {
+    text-align: left;
+    margin-top: 40px;
+  }
+  .text-by-image {
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+  }
+  .text-by-image > div.image > div.outline > img {
+    width: 100% !important;
+  }
+}
 @media only screen and (max-width: 544px) {
   body:not(.force-desktop) .hide-on-mobile {
     display: none;
@@ -694,8 +726,6 @@ ol.tab-control > li.selected {
     z-index: 2;
   }
   body:not(.force-desktop) header {
-    padding-left: 20px;
-    padding-right: 20px;
     position: sticky;
     top: 0px;
     margin-top: -16px;
@@ -752,32 +782,14 @@ ol.tab-control > li.selected {
   body:not(.force-desktop) .trusted-companies > li > .trusted-company-logo {
     width: 160px;
   }
-  body:not(.force-desktop) .text-by-image {
-    flex-direction: column;
-    text-align: center;
-    gap: 60px;
-  }
-  body:not(.force-desktop) .text-by-image > div.image {
-    padding: 0 20px;
-  }
-  body:not(.force-desktop) .text-by-image > div.image > div.outline {
-    padding: 20px;
-  }
-  body:not(.force-desktop) .text-by-image > div.image > div.outline > img {
-    width: 100%;
-  }
   body:not(.force-desktop) .boxes {
     flex-direction: column;
     column-gap: 20px;
     row-gap: 20px;
+    margin-top: 40px;
   }
   body:not(.force-desktop) .boxes > li {
     border-radius: 20px;
-  }
-  body:not(.force-desktop) .boxes.wide {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 40px;
   }
   body:not(.force-desktop) .reviews > .avatar-group {
     padding-right: 12px;
@@ -791,10 +803,6 @@ ol.tab-control > li.selected {
   }
   body:not(.force-desktop) .reviews > .rating > .text {
     margin-top: 2px;
-  }
-  body:not(.force-desktop) ul.vertical-points {
-    text-align: left;
-    margin-top: 40px;
   }
   body:not(.force-desktop) footer {
     padding-top: 60px;
