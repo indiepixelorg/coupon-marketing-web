@@ -25,9 +25,9 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 36px;
   color: #102830;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .playfair-display, h1, h2, h3 {
@@ -42,7 +42,7 @@ h3 {
   font-style: normal;
 }
 
-.w-400, body {
+.w-400, .pricing-flex .column-header > .price > span, .pricing-flex .column-header > .title, body {
   font-weight: 400;
 }
 
@@ -50,7 +50,7 @@ h3 {
   font-weight: 600;
 }
 
-.w-700, h1, h2, h3 {
+.w-700, .pricing-flex .column-header > .price, h1, h2, h3 {
   font-weight: 700;
 }
 
@@ -406,19 +406,16 @@ footer a {
   box-sizing: content-box;
 }
 .pricing-flex .column-header > .title {
-  font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
   margin: 10px 0;
 }
 .pricing-flex .column-header > .price {
-  font-weight: 900;
   font-size: 24px;
   margin: 24px 0;
   color: #102830;
 }
 .pricing-flex .column-header > .price > span {
-  font-weight: 400;
   font-size: 16px;
   color: #024751;
 }
