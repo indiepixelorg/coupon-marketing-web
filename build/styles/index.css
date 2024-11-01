@@ -34,12 +34,14 @@ h3 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-display: swap;
 }
 
 .source-sans, .button, button, a.button-like, ul.vertical-points > li > div.text > span, body {
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-display: swap;
 }
 
 .w-400, body {
