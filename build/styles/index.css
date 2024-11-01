@@ -420,9 +420,6 @@ footer a {
 .pricing-flex .column-header > .description {
   font-size: 16px;
 }
-.pricing-flex .column-header > .description > span {
-  color: #102830;
-}
 .pricing-flex .column-footer {
   padding-top: 20px;
   padding-bottom: 30px;
