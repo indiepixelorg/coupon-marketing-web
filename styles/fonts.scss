@@ -1,3 +1,4 @@
+// GOOGLE FONTS
 // You can get this by making this request:
 // https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@200..900&display=swap&text=1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%20%21%22%23%24%25%26%27
 // 
@@ -17,4 +18,34 @@
   font-weight: 200 900;
   font-display: swap;
   src: url(https://fonts.gstatic.com/l/font?kit=nwpStKy2OAdR1K-IwhWudF-R7w0IJuL8zlRZ1YpXmEA_5xoHqbj4_HuK_XTaRmjH8hDOUU6MxAYHJwSFNMAvbSLPDwfPStKKgcgXsg4JE_AWzcUJdWyKbzR9lrQ&skey=1497ac707ba83cff&v=v15) format('woff2');
+}
+
+
+// MATERIAL ICON FONT
+// You can get this by making this request:
+// https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@500
+// 
+// The link above is the one that Google tells you to put inside the <link> tag.
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v215/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCdHOej.woff2) format('woff2');
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
