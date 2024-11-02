@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDVfJDA3XeJP2-yNZjYRajQUnsvk4XnfPQhVl_f8BfqfCk1x10orqckSwKzK1tpm7jMPGrPJlCnJP7kbnkpr59p8rhB7ahtLncP&skey=f3b68f0152604ed9&v=v37) format("woff2");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=nwpStKy2OAdR1K-IwhWudF-R7w0IJuL8zlRZ1YpXmEA_5xoHqbj4_HuK_XTaRmjH8hDOUU6MxAYHJwSFNMAvbSLPDwfPStKKgcgXsg4JE_AWzcUJdWyKbzR9lrQ&skey=1497ac707ba83cff&v=v15) format("woff2");
+}
 /* Resetting default margin and padding */
 * {
   margin: 0;
