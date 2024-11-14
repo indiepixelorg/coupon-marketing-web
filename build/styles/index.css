@@ -355,6 +355,10 @@ footer a {
 .text-by-image > div.image > div.outline.invisible {
   padding: 10px;
 }
+.text-by-image > div.image > div.outline.iphone {
+  padding: 0;
+  border-radius: 40px;
+}
 .text-by-image > div.image > div.outline > img {
   width: 260px;
   max-width: 260px;
